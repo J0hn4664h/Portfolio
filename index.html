@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+ <head>
+         
+  <title>Profile Card</title>       
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000000">
+  <link rel="icon" href="photos/my-logo.png" type="image/png" sizes="32x32">
+  <style>
+   
+   /*Base style*/
+   body {
+       margin: 0;     
+       min-height: 100vh;
+       display: flex;       
+       justify-content: center;
+       align-items: center;
+       font-family: Arial, Trebuchet MS, Sans-Serif;
+    }  
+    
+    #card {
+       width: 300px;    
+       border: solid 2px;
+       border-radius: 20px;
+       text-align: center;
+       overflow: hidden;
+       font-size: 16px;
+    }
+    
+    #profile {
+       width: 100%;
+       padding-top: 20px;
+    }    
+    
+    #profile img {
+       border: outset 4px;
+       border-radius: 50%;
+       height: 100px;
+       width: 100px;
+       margin-bottom: 10px;
+    }
+    
+    #bio {
+       padding: 20px;       
+       line-height: 1.6rem;
+    }
+    
+    #bio a {
+       border: solid 0px;
+       border-radius: 5px;
+       padding: 10px;
+       text-decoration: none;   
+    }
+   
+   /*Dark theme*/
+   @media (prefers-color-scheme: dark) {
+    
+    #card {
+       border-color: #fff;
+    }
+    
+    #profile {
+       background:linear-gradient(135deg, #fff, #000);
+    }    
+    
+    #profile img {
+       border-color: #fff;
+    }
+    
+    #bio a {
+       background: #fff;    
+       color: #000;
+    }
+    
+    #bio a:hover {
+       background: #000; 
+       border: solid 1px #fff;
+       color: #fff;
+    }
+    
+   }
+   
+   /*Light theme*/
+   @media (prefers-color-scheme: light) {
+   
+    #card {        
+       border-color: #000;
+    }
+    
+    #profile {
+       background: linear-gradient(135deg, #000, #fff);
+    }
+    
+    #profile img {
+       border-color: #000;
+    }
+    
+    #bio a {
+       background: #000;    
+       color: #fff;
+    }
+    
+    #bio a:hover {
+       background: #fff;    
+       border: solid 1px #000;
+       color: #000;
+   }
+   
+  }
+   
+  </style>
+  
+ </head>
+ 
+ <body>
+         
+  <div id="card">
+          
+   <div id="profile">
+    <img src="photos/profile-photo.jpg" alt="Profile photo of John Abbah">    
+    <h2>John Abbah</h2>
+    <p>Web Development Student</p>
+   </div>
+   
+   <div id="bio">
+    <p>Passionate Learner of HTML, CSS &amp; JavaScript to create responsive webpages</p> 
+    <a href="about-me.html">Port folio</a>
+   </div>
+   
+  </div>
+  
+ </body>
+ 
+</html>

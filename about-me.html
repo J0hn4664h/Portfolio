@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+        
+ <head>
+         
+  <title>Portfolio</title>   
+  <meta charset="UTF-8">
+  <meta name="description" content="John Abbah is a Passionate Web development Student focused on HTML 5 CSS 3 and JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000000">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ffffff">
+  <link rel="icon" href="photos/my-logo.png" type="image/svg" sizes="32x32">
+  <style>
+  
+   /*Base style*/
+   *, *::before, *::after {
+       box-sizing: border-box;
+   }
+   
+   body {
+       margin-top: 0;      
+       font-family: Arial, "Trebuchet MS", Sans-Serif;
+       line-height: 1.6;
+       font-size: 16px;
+    }   
+    
+    header h1, header h2 {
+       text-align: center;     
+    }
+    h1, h2 {
+    text-transform: uppercase;   
+    font-weight: bold;
+    }
+    
+    figure img {
+       width: 150px;     
+       height: 150px;
+       border: outset 4px;
+       border-radius: 50%;
+       display: block;
+    }
+    
+    figcaption {
+       font-weight: bold;   
+    }
+    
+    a[href="https://mimo.org"] {
+       text-decoration: none;   
+       color: #530080;
+       font-weight: bold;
+    }
+    
+    ul {
+       padding-left: 15px;        
+    }
+    
+    #contact div {
+     display: flex;   
+     justify-content: space-evenly;
+     width: 100%;
+    }
+    
+    #contact div a {    
+       width: 40px;
+       height: 40px;
+       border: none;
+       border-radius: 50%;
+       display: inline-block;
+       background-color: transparent;
+       background-size: 60%;
+       background-position: center;
+       background-repeat: no-repeat;
+    }
+    
+    #contact div a:focus {
+       outline: 2px solid #00008b;
+    }
+    
+    #contact div a:nth-child(1) {
+       background: url("icons/phone-thin.svg"); 
+    }
+    
+    #contact div a:nth-child(2) {
+       background: url("icons/envelope-thin.svg"); 
+    }
+    
+    #contact div a:nth-child(3) {
+       background: url("icons/github-logo-thin.svg"); 
+    }
+       
+    footer p {
+       text-align: center;     
+       color: #888;
+       font-weight: bold;
+       margin-top: 20px;
+       margin-bottom: 5px;
+    }
+    
+   /*Dark theme*/
+   @media(prefers-color-scheme: dark) {
+           
+    h1 {
+       background: #fff;
+       color: #000;
+       margin: 0px auto;
+       padding: 8px;
+    }
+    
+    figure img {
+       border-color: #fff;        
+    }
+    
+    #contact div a:nth-child(3) {
+       border: solid 1px #fff;
+    }        
+   }      
+   
+   /*light theme*/
+   @media(prefers-color-scheme: light) {
+        
+    h1 {
+       background: #000;
+       color: #fff;
+       margin: 0px auto;
+       padding: 8px;
+    }
+    
+    figure img {
+       border-color: #000;
+    }
+    
+   }
+  </style>
+  
+ </head>
+ 
+ <body>
+         
+  <header>
+   <h1>John Abbah</h1>   
+   <h2>Front-End Web Developer</h2>
+   <p>I learn Front-End Web Development and continue
+   to improve my skills.
+   </p>
+  </header>
+  
+  <main>
+          
+   <section id="about-me">
+           
+    <h2>About Me</h2>       
+    <figure>
+      <img src="photos/profile-photo.jpg" alt="Portrait of John Abbah">      
+     <figcaption>Passionate Front-End web Development Student</figcaption>
+    </figure>     
+    <p>I developed interest in coding through 
+    <a href="https://mimo.org" target="_blank"
+    rel="noreferrer">Mimo</a> because I was 
+    curious about how websites and applications are built. <br>
+    I am currently learning HTML5, CSS3 and JavaScript,
+    while working on small practical projects. <br>
+    I aim to become a Full-stack Developer
+    </p>
+    
+   </section>    
+   
+   <section id="skills">
+   
+    <h2>Skills</h2>       
+    <h3>Front-End</h3>
+    <ul>
+     <li>HTML5</li>
+     <li>CSS3</li>
+     <li>JavaScript</li>
+    </ul>
+    <h3>Tools</h3>
+    <ul>
+     <li>Git & GitHub</li>      
+     <li>VScode & Acode</li>      
+     <li>Termux</li>      
+    </ul>
+    
+   </section>
+   
+   <section id="contact">
+    <h2>Contact</h2>
+    <div role="navigation" aria-label="Contact links">
+     <a href="tel:+2347013837658" aria-label="Call me"></a>
+     <a href="mailto:johnabbah999@gmail.com" aria-label="Email me"></a>
+     <a href="https://github.com/J0hn4664h" aria-label="Github profile"></a>
+    </div>
+   </section>
+   
+  </main>
+  
+  <footer role="contentinfo">
+   <p>&copy; 2025 John Abbah • Built with HTML5</p>      
+  </footer>
+  
+ </body>
+        
+</html>
