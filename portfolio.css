@@ -4,12 +4,12 @@
    }
    
    @keyframes fadein {
-    from {
+    0% {
        opacity: 0;     
        transform: translateX(-20px);
     }     
       
-    to {
+    100% {
        opacity: 1;    
        transform: translateX(0);
     }
@@ -19,7 +19,7 @@
       font-family: Arial, "Sans-Serif", Georgia, "Trebuchet MS", Segoe UI;      
       line-height: 1.6rem;
       letter-spacing: 0.5px;
-      animation: fadein 3s ease-out;
+      animation: fadein 3s linear;
    }
    
    header {
@@ -107,11 +107,14 @@
       margin: 0px;
    }
    
-   #hero h1 {
+   #hero h1, section h2 {
       margin: 0 auto;
       padding: 20px;
    }
    
+   section h2 {
+    text-align: center;       
+   }
    main {
       display: grid;       
       grid-template: repeat(3, auto)/1fr;
@@ -138,7 +141,7 @@
    }
    
    a[href="https://mimo.org"] {
-      color: #4f0467;     
+      color: #639;     
       text-decoration: none; 
       font-weight: bold;
    }
@@ -153,14 +156,21 @@
    
    #contacts ul li a {
       display: inline-block;    
-      width: 40px;  
-      height: 40px;
+      width: 50px;  
+      height: 50px;
       background-position: center;
       background-size: cover;
       border: solid;
       border-radius: 50%;
       transition: transform 0.3s ease;
+      font-size: 14px;
+      text-decoration: none;
    }   
+   
+   #contacts ul li a span {
+    visibility: hidden;       
+   }
+
    
    #contacts ul li label {
       margin-left: 10px;           
@@ -222,6 +232,10 @@
    footer nav a:nth-child(3) {
       background: url("icons/instagram-logo-thin.svg");        
    }
+  
+  footer nav a span {
+   visibility: hidden;       
+  }
    
    /*TABLETS*/
    @media (min-width: 768px) {
@@ -321,7 +335,7 @@
       background: #111;       
      }     
      
-     #hero h1 {
+     #hero h1, section h2 {
       background: #000;    
       color: #fff;
      }
@@ -356,7 +370,7 @@
       background: #fff;  
      }
      
-     #hero h1 {
+     #hero h1, section h2 {
       background: #fff;    
       color: #000;
      }     
